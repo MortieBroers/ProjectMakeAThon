@@ -7,11 +7,16 @@
 
     <title></title>
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="" rel="stylesheet">
 </head>
 
 <body>
+    <script src=""></script>
 
 </body>
 
 </html>
+
+<?php
+
+?>
