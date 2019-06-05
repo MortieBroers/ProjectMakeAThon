@@ -9,7 +9,7 @@
 </head>
   <body>
     <?php
-      $cat = "SELECT * FROM gameserver ";
+      $cat = "SELECT * FROM gameserver";
       $antwoord = $DBH->query($cat);
       while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
 
@@ -18,4 +18,3 @@
     ?>
   </body>
 </html>
-
