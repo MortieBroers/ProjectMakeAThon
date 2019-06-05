@@ -32,64 +32,65 @@ include 'config.php';
       </div>
     </div>
   </header>
-  <button id="openButton" onclick="openInfo()">Open Info<button>
 
-      <button id="closeButton" onclick="closeInfo()">Close Info</button>
+    <button id="openButton" onclick="openInfo()">Open Info</button>
 
-      <div id="info">
-        <h4>Hoe Werkt Dit Spel?</h4>
-        <p>
-          Info
-        </p>
+    <button id="closeButton" onclick="closeInfo()">Close Info</button>
 
-        <h4>Geef De Spelers Een Boost.</h4>
-        <p>
-          Boost
-        </p>
+    <div id="info">
+      <h4>Hoe Werkt Dit Spel?</h4>
+      <p>
+        Info
+      </p>
 
-        <h4>Spawn Vijanden In Het Spel.</h4>
-        <p>
-          Enemy
-        </p>
+      <h4>Geef De Spelers Een Boost.</h4>
+      <p>
+        Boost
+      </p>
 
-        <h4>Verblind De Spelers.</h4>
-        <p>
-          Vignette
-        </p>
-      </div>
+      <h4>Spawn Vijanden In Het Spel.</h4>
+      <p>
+        Enemy
+      </p>
 
-      <form>
-        <input type="submit" name="Boost">
-        <input type="submit" name="Enemy">
-        <input type="submit" name="Blindness">
-      </form>
+      <h4>Verblind De Spelers.</h4>
+      <p>
+        Vignette
+      </p>
+    </div>
 
-      <script>
-        $(document).ready(function() {
-          $('#info').hide();
-          $('#closeButton').hide();
-        });
+    <form type="$_POST">
+      <input type="submit" name="Boost" value="Boost Speler">
+      <input type="submit" name="Enemy" value="Spawn Enemy">
+      <input type="submit" name="Blindness" value="Verblind Speler">
+    </form>
 
-        function openInfo() {
-          $('#info').show();
-          $('#openButton').hide();
-          $('#closeButton').show();
-        }
+    <script>
+      $(document).ready(function() {
+        $('#info').hide();
+        $('#closeButton').hide();
+      });
 
-        function closeInfo() {
-          $('#info').hide();
-          $('#openButton').show();
-          $('#closeButton').hide();
-        }
-      </script>
-
-      <?php
-      $cat = "SELECT * FROM gameserver";
-      $antwoord = $DBH->query($cat);
-      while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
-        print $row['score'];
+      function openInfo() {
+        $('#info').show();
+        $('#openButton').hide();
+        $('#closeButton').show();
       }
-      ?>
+
+      function closeInfo() {
+        $('#info').hide();
+        $('#openButton').show();
+        $('#closeButton').hide();
+      }
+    </script>
+
+    <?php
+    $cat = "SELECT * FROM gameserver";
+    $antwoord = $DBH->query($cat);
+    while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
+      print $row['score'];
+    }
+    ?>
 
 </body>
 
