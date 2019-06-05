@@ -9,11 +9,11 @@ include 'includes.php';
   </head>
   <body>
     <?php
-$cat = "SELECT Highscore FROM gamestatus ";
+$cat = "SELECT * FROM gameserver ";
 $antwoord = $DBH->query($cat);
 while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
 
-  print 'Het antwoord is'+ $antwoord + 'Soo';
+  print $row['score'];
 
 }
 ?>
