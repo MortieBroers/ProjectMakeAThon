@@ -5,7 +5,4 @@
  $password = "OlkJxkax8O";
 
  $DBH = new PDO('mysql:host=' .$host. ';dbname=' .$dbname, $user, $password);
-
-
-
 ?>
