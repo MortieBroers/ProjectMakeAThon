@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>DE GAME</title>
+  <title>DE SPEL</title>
 </head>
   <body>
     <?php
@@ -16,5 +16,6 @@
         print $row['score'];
       }
     ?>
+
   </body>
 </html>
