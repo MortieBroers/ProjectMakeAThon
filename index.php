@@ -1,3 +1,6 @@
+<?php
+  include 'config.php';
+?>
 <html lang="en" dir="ltr">
 
 <head>
@@ -15,6 +18,4 @@
     ?>
   </body>
 </html>
-<?php
-  include 'config.php';
-?>
+
