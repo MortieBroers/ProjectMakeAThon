@@ -5,20 +5,16 @@
   <title>DE GAME</title>
 </head>
   <body>
-    
+    <?php
+      $cat = "SELECT * FROM gameserver ";
+      $antwoord = $DBH->query($cat);
+      while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
+
+        print $row['score'];
+      }
+    ?>
   </body>
 </html>
-
 <?php
-require_once 'config.php';
-
-$cat = "SELECT Highscore FROM gamestatus ";
-
-$highscore = $DBH->query($cat);
-$name = $DBH->query($cat);
-
-while ($row = $highscore->fetch(PDO::FETCH_ASSOC)) {
-
-  print $highscore + $name;
-}
+  include 'includes.php';
 ?>
