@@ -31,7 +31,7 @@ include 'config.php';
       </div>
     </div>
     </header>
-    <button id="openButton" onclick="openInfo()">Open Info<button>
+    <button id="openButton" onclick="openInfo()">Open Info</button>
 
     <button id="closeButton" onclick="closeInfo()">Close Info</button>
 
