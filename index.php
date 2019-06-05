@@ -3,11 +3,10 @@ include 'config.php';
 ?>
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <title>DE GAME</title>
-  </head>
-
+<head>
+  <meta charset="utf-8">
+  <title>DE SPEL</title>
+</head>
   <body>
     <button id="openButton" onclick="openInfo()">Open Info<button>
 
@@ -66,6 +65,7 @@ include 'config.php';
       print $row['score'];
     }
     ?>
+
   </body>
 
 </html>
