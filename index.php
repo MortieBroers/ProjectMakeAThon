@@ -16,5 +16,5 @@
   </body>
 </html>
 <?php
-  include 'includes.php';
+  include 'config.php';
 ?>
