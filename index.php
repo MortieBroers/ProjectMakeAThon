@@ -13,8 +13,9 @@ include 'config.php';
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-  <body>
-    <header>
+
+<body>
+  <header>
     <div class="left-header">
       <div class="wrapper-left-header">
 
@@ -57,15 +58,16 @@ include 'config.php';
       </p>
     </div>
 
-    <form>
-      <input type="submit" name="Boost">
-      <input type="submit" name="Enemy">
-      <input type="submit" name="Blindness">
+    <form type="$_POST">
+      <input type="submit" name="Boost" value="Boost Speler">
+      <input type="submit" name="Enemy" value="Spawn Enemy">
+      <input type="submit" name="Blindness" value="Verblind Speler">
     </form>
 
     <script>
       $(document).ready(function() {
         $('#info').hide();
+        $('#closeButton').hide();
       });
 
       function openInfo() {
@@ -89,6 +91,6 @@ include 'config.php';
     }
     ?>
 
-  </body>
+</body>
 
 </html>
