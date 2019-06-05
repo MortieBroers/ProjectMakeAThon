@@ -8,17 +8,25 @@
 
   </body>
 </html>
-
 <?php
-require_once 'config.php';
+include 'includes.php';
+ ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <?php
+$cat = "SELECT * FROM gameserver ";
+$antwoord = $DBH->query($cat);
+while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
 
-$cat = "SELECT Highscore FROM gamestatus ";
+  print $row['score'];
 
-$highscore = $DBH->query($cat);
-$name = $DBH->query($cat);
-
-while ($row = $highscore->fetch(PDO::FETCH_ASSOC)) {
-
-  print $highscore + $name;
 }
 ?>
+
+  </body>
+</html>
