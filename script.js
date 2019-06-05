@@ -1,19 +1,16 @@
-$(document).ready(function() 
-      {
-        $('#info').hide();
-        $('#closeButton').hide();
-      });
+$(document).ready(function () {
+    $('#info').hide();
+    $('#closeButton').hide();
+});
 
-      function openInfo() 
-      {
-        $('#info').show();
-        $('#openButton').hide();
-        $('#closeButton').show();
-      }
+function openInfo() {
+    $('#info').show();
+    $('#openButton').hide();
+    $('#closeButton').show();
+}
 
-      function closeInfo() 
-      {
-        $('#info').hide();
-        $('#openButton').show();
-        $('#closeButton').hide();
-      }
+function closeInfo() {
+    $('#info').hide();
+    $('#openButton').show();
+    $('#closeButton').hide();
+}

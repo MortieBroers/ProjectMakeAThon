@@ -37,22 +37,22 @@ include 'config.php';
     <button id="closeButton" onclick="closeInfo()">Close Info</button>
 
     <div id="info">
-      <h4>Hoe Werkt Dit Spel?</h4>
+      <h6>Hoe Werkt Dit Spel?</h4>
       <p>
         Info
       </p>
 
-      <h4>Geef De Spelers Een Boost.</h4>
+      <h6>Geef De Spelers Een Boost.</h4>
       <p>
         Boost
       </p>
 
-      <h4>Spawn Vijanden In Het Spel.</h4>
+      <h6>Spawn Vijanden In Het Spel.</h4>
       <p>
         Enemy
       </p>
 
-      <h4>Verblind De Spelers.</h4>
+      <h6>Verblind De Spelers.</h4>
       <p>
         Vignette
       </p>
@@ -65,8 +65,6 @@ include 'config.php';
     </form>
 
     <script src="script.js"></script>
-
-    
 
     <?php
     $cat = "SELECT * FROM gameserver";
