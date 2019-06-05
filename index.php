@@ -62,7 +62,7 @@ include 'config.php';
   </div>
 
   <form type="$_POST">
-    <input type="radio" name="Boost" value="Boost Speler" checked>
+    <input type="radio" name="Boost" value="Boost Speler">
     <input type="radio" name="Enemy" value="Spawn Enemy">
     <input type="radio" name="Blindness" value="Verblind Speler">
     <input type="submit" name="Submit" value="Activeer">
