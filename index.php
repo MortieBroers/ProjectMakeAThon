@@ -13,8 +13,9 @@ include 'config.php';
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-  <body>
-    <header>
+
+<body>
+  <header>
     <div class="left-header">
       <div class="wrapper-left-header">
 
@@ -30,65 +31,66 @@ include 'config.php';
 
       </div>
     </div>
-    </header>
-    <button id="openButton" onclick="openInfo()">Open Info<button>
+  </header>
+  <button id="openButton" onclick="openInfo()">Open Info<button>
 
-    <button id="closeButton" onclick="closeInfo()">Close Info</button>
+      <button id="closeButton" onclick="closeInfo()">Close Info</button>
 
-    <div id="info">
-      <h4>Hoe Werkt Dit Spel?</h4>
-      <p>
-        Info
-      </p>
+      <div id="info">
+        <h4>Hoe Werkt Dit Spel?</h4>
+        <p>
+          Info
+        </p>
 
-      <h4>Geef De Spelers Een Boost.</h4>
-      <p>
-        Boost
-      </p>
+        <h4>Geef De Spelers Een Boost.</h4>
+        <p>
+          Boost
+        </p>
 
-      <h4>Spawn Vijanden In Het Spel.</h4>
-      <p>
-        Enemy
-      </p>
+        <h4>Spawn Vijanden In Het Spel.</h4>
+        <p>
+          Enemy
+        </p>
 
-      <h4>Verblind De Spelers.</h4>
-      <p>
-        Vignette
-      </p>
-    </div>
+        <h4>Verblind De Spelers.</h4>
+        <p>
+          Vignette
+        </p>
+      </div>
 
-    <form>
-      <input type="submit" name="Boost">
-      <input type="submit" name="Enemy">
-      <input type="submit" name="Blindness">
-    </form>
+      <form>
+        <input type="submit" name="Boost">
+        <input type="submit" name="Enemy">
+        <input type="submit" name="Blindness">
+      </form>
 
-    <script>
-      $(document).ready(function() {
-        $('#info').hide();
-      });
+      <script>
+        $(document).ready(function() {
+          $('#info').hide();
+          $('#closeButton').hide();
+        });
 
-      function openInfo() {
-        $('#info').show();
-        $('#openButton').hide();
-        $('#closeButton').show();
+        function openInfo() {
+          $('#info').show();
+          $('#openButton').hide();
+          $('#closeButton').show();
+        }
+
+        function closeInfo() {
+          $('#info').hide();
+          $('#openButton').show();
+          $('#closeButton').hide();
+        }
+      </script>
+
+      <?php
+      $cat = "SELECT * FROM gameserver";
+      $antwoord = $DBH->query($cat);
+      while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
+        print $row['score'];
       }
+      ?>
 
-      function closeInfo() {
-        $('#info').hide();
-        $('#openButton').show();
-        $('#closeButton').hide();
-      }
-    </script>
-
-    <?php
-    $cat = "SELECT * FROM gameserver";
-    $antwoord = $DBH->query($cat);
-    while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
-      print $row['score'];
-    }
-    ?>
-
-  </body>
+</body>
 
 </html>
