@@ -15,16 +15,24 @@ include 'config.php';
 
     <div id="info">
       <h4>Hoe Werkt Dit Spel?</h4>
-      <p>Inhoud</p>
+      <p>
+        Info
+      </p>
 
       <h4>Geef De Spelers Een Boost.</h4>
-      <p>Boost</p>
+      <p>
+        Boost
+      </p>
 
       <h4>Spawn Vijanden In Het Spel.</h4>
-      <p>Enemy</p>
+      <p>
+        Enemy
+      </p>
 
       <h4>Verblind De Spelers.</h4>
-      <p>Vignette</p>
+      <p>
+        Vignette
+      </p>
     </div>
 
     <form>
@@ -39,13 +47,13 @@ include 'config.php';
       });
 
       function openInfo() {
-        $('#info').hide();
+        $('#info').show();
         $('#openButton').hide();
         $('#closeButton').show();
       }
 
       function closeInfo() {
-        $('#info').show();
+        $('#info').hide();
         $('#openButton').show();
         $('#closeButton').hide();
       }
