@@ -64,24 +64,9 @@ include 'config.php';
       <input type="submit" name="Blindness" value="Verblind Speler">
     </form>
 
-    <script>
-      $(document).ready(function() {
-        $('#info').hide();
-        $('#closeButton').hide();
-      });
+    <script src="script.js"></script>
 
-      function openInfo() {
-        $('#info').show();
-        $('#openButton').hide();
-        $('#closeButton').show();
-      }
-
-      function closeInfo() {
-        $('#info').hide();
-        $('#openButton').show();
-        $('#closeButton').hide();
-      }
-    </script>
+    
 
     <?php
     $cat = "SELECT * FROM gameserver";
