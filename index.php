@@ -34,7 +34,7 @@ include 'config.php';
       </div>
     </div>
   </header>
-  
+
   <button id="openButton" onclick="openInfo()">Open Info</button>
 
   <button id="closeButton" onclick="closeInfo()">Close Info</button>
@@ -42,23 +42,29 @@ include 'config.php';
   <div id="info">
     <h6>Hoe Werkt Deze Site?</h4>
       <p>
-        Op deze site kun je bepaalde gebeurtenissen besturen in het spel. <\br>
-
+        Op deze site kun je bepaalde gebeurtenissen besturen die in het spel gebeuren.<\br>
+        De spelers lijden onder die gebeurtenissen.
       </p>
 
     <h6>Geef De Spelers Een Boost.</h4>
       <p>
-        Boost
+        De spelers krijgen een snelheidsboost die 5 seconden lang duurt.<\br><\br>
+
+        (dit heeft een cooldown van 20 seconden)
       </p>
 
     <h6>Spawn Vijanden In Het Spel.</h4>
       <p>
-        Enemy
+        De spelers worden verhinderd door tegenliggers. Als de speler tegen de tegenligger crasht, verliest de speler.<\br><\br>
+        
+        (dit heeft een cooldown van 20 seconden)
       </p>
 
     <h6>Verblind De Spelers.</h4>
       <p>
-        Vignette
+        De spelers krijgen een verblindend effect op hun beeld.<\br><\br>
+
+        (dit heeft een cooldown van 20 seconden)
       </p>
   </div>
 
