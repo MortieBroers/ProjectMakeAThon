@@ -39,9 +39,10 @@ include 'config.php';
   <button id="closeButton" onclick="closeInfo()">Close Info</button>
 
   <div id="info">
-    <h6>Hoe Werkt Dit Spel?</h4>
+    <h6>Hoe Werkt Deze Site?</h4>
       <p>
-        Info
+        Op deze site kun je bepaalde gebeurtenissen besturen in het spel. <\br>
+
       </p>
 
     <h6>Geef De Spelers Een Boost.</h4>
@@ -61,9 +62,10 @@ include 'config.php';
   </div>
 
   <form type="$_POST">
-    <input type="submit" name="Boost" value="Boost Speler">
-    <input type="submit" name="Enemy" value="Spawn Enemy">
-    <input type="submit" name="Blindness" value="Verblind Speler">
+    <input type="radio" name="Boost" value="Boost Speler" checked>
+    <input type="radio" name="Enemy" value="Spawn Enemy">
+    <input type="radio" name="Blindness" value="Verblind Speler">
+    <input type="submit" name="Submit" value="Activeer">
   </form>
 
   <script src="script.js"></script>
