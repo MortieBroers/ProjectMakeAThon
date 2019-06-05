@@ -49,21 +49,18 @@ include 'config.php';
     <h6>Geef De Spelers Een Boost.</h4>
       <p>
         De spelers krijgen een snelheidsboost die 5 seconden lang duurt.<\br><\br>
-
         (dit heeft een cooldown van 20 seconden)
       </p>
 
     <h6>Spawn Vijanden In Het Spel.</h4>
       <p>
         De spelers worden verhinderd door tegenliggers. Als de speler tegen de tegenligger crasht, verliest de speler.<\br><\br>
-        
         (dit heeft een cooldown van 20 seconden)
       </p>
 
     <h6>Verblind De Spelers.</h4>
       <p>
         De spelers krijgen een verblindend effect op hun beeld.<\br><\br>
-
         (dit heeft een cooldown van 20 seconden)
       </p>
   </div>
@@ -81,6 +78,7 @@ include 'config.php';
     $cat = "SELECT * FROM gameserver";
     $antwoord = $DBH->query($cat);
     while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
+      print $row['naam'];
       print $row['score'];
     }
   ?>
