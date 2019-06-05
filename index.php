@@ -34,6 +34,7 @@ include 'config.php';
       </div>
     </div>
   </header>
+  
   <button id="openButton" onclick="openInfo()">Open Info</button>
 
   <button id="closeButton" onclick="closeInfo()">Close Info</button>
@@ -71,11 +72,11 @@ include 'config.php';
   <script src="script.js"></script>
 
   <?php
-  $cat = "SELECT * FROM gameserver";
-  $antwoord = $DBH->query($cat);
-  while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
-    print $row['score'];
-  }
+    $cat = "SELECT * FROM gameserver";
+    $antwoord = $DBH->query($cat);
+    while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
+      print $row['score'];
+    }
   ?>
 
 </body>
