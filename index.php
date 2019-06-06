@@ -1,5 +1,6 @@
 <?php
-include 'config.php';
+require_once 'config.php';
+require_once 'functions.php';
 ?>
 <html lang="en" dir="ltr">
 
@@ -35,6 +36,12 @@ include 'config.php';
     </div>
   </header>
 
+  <div id="scores">
+    <?php 
+      ShowScores(); 
+    ?>
+  </div>
+
   <button id="openButton" onclick="openInfo()">Open Info</button>
 
   <button id="closeButton" onclick="closeInfo()">Close Info</button>
@@ -64,13 +71,6 @@ include 'config.php';
         (dit heeft een cooldown van 20 seconden)
       </p>
   </div>
-
-  <form type="$_POST">
-    <input type="radio" name="Boost" value="Boost Speler">
-    <input type="radio" name="Enemy" value="Spawn Enemy">
-    <input type="radio" name="Blindness" value="Verblind Speler">
-    <input type="submit" name="Submit" value="Activeer">
-  </form>
 
   <script src="script.js"></script>
 
