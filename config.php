@@ -7,5 +7,5 @@ function connection()
  $user = "hNV884Qbj8";
  $password = "OlkJxkax8O";
 
- $DBH = new PDO('mysql:host=' .$host. ';dbname=' .$dbname, $user, $password);
+ return new PDO('mysql:host=' .$host. ';dbname=' .$dbname, $user, $password);
 }
