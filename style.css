@@ -1,3 +1,202 @@
-html , body {
+div {
 
+}
+
+html , body {
+margin: 0;
+background-color: MediumPurple;
+}
+
+header {
+height: 100px;
+width: 100%;
+}
+
+.left-header, .middle-header, .right-header {
+height: 100px;
+width: 33%;
+float: left;
+}
+
+.responsive-header {
+display: none;
+height: 100px;
+width: 33%;
+float: left;
+}
+
+#info {
+text-align: center;
+height: auto;
+margin-top: 20px;
+}
+
+#closeButton, #openButton {
+margin-left: 40%;
+width: 20%;
+margin-right: 40%;
+margin-top: 8%;
+}
+
+.application-holder {
+
+}
+
+.wrapper-left-header {
+text-align: center;
+margin: 33px;
+width: auto;
+height: auto;
+}
+
+
+
+
+.wrapper-middle-header h1, .responsive-header h1 {
+font-family: 'Ruge Boogie', cursive;
+text-align: center;
+margin: 33px;
+color: black;
+}
+
+
+
+.static_1, .static_2, .static_3, .static_4, .static_5 {
+float: left;
+font-size: 20px;
+letter-spacing: 2px;
+}
+
+.static_1 {
+animation: static 5s infinite;
+animation-duration: 2s;
+margin-left: 200px;
+}
+
+.static_2 {
+animation: static_y 5s infinite;
+animation-duration: 2s;
+}
+
+.static_3 {
+animation: static_u 5s infinite;
+animation-duration: 2s;
+}
+
+.static_4 {
+animation: static_i 5s infinite;
+animation-duration: 2s;
+}
+
+.static_5 {
+animation: static_o 5s infinite;
+animation-duration: 2s;
+}
+
+.dots {
+font-size: 20px;
+margin-left: -100px;
+}
+
+@keyframes static {
+0%   {color: red;}
+0% {font-size: 18px;}
+20%  {color: yellow;}
+20% {color: 12px;}
+40%  {color: blue;}
+40% {color: 15px;}
+60% {color: green;}
+60% {font-size: 13px;}
+80% {color: purple;}
+80% {font-size: 15px;}
+100% {color: orange;}
+}
+
+@keyframes static_y {
+0%   {color: red;}
+0% {font-size: 25px;}
+20%  {color: OrangeRed;}
+20% {font-size: 23px;}
+40%  {color: DarkRed;}
+40% {font-size: 20px;}
+60% {color: LightCoral;}
+60% {font-size: 12px;}
+80% {color: Maroon;}
+80% {font-size: 10px;}
+100% {color: orange;}}
+
+@keyframes static_u {
+0%   {color: red;}
+0% {font-size: 18px;}
+20%  {color: yellow;}
+20% {font-size: 8px;}
+40%  {color: blue;}
+40% {font-size: 10px;}
+60% {color: green;}
+60% {font-size: 11px;}
+80% {color: purple;}
+80% {font-size: 20px;}
+100% {color: orange;}
+}
+
+@keyframes static_i {
+0%   {color: MediumSlateBlue;}
+0% {font-size: 8px;}
+20%  {color: Cyan;}
+20% {font-size: 7px;}
+40%  {color: blue;}
+40% {font-size: 14px;}
+60% {color: MediumSpringGreen;}
+60% {font-size: 10px;}
+80% {color: DarkTurquoise;}
+80% {font-size: 19px;}
+100% {color: MidnightBlue;}
+}
+
+@keyframes static_o {
+0%   {color: Violet;}
+0% {font-size: 18px;}
+20%  {color: Fuchsia;}
+20% {font-size: 20px;}
+40%  {color: Crimson;}
+40% {font-size: 15px;}
+60% {color: HotPink;}
+60% {font-size: 9px;}
+80% {color: purple;}
+80% {font-size: 15px;}
+100% {color: Tomato;}
+}
+
+@media only screen and (max-width: 800px) {
+  .left-header, .right-header {
+  width: 100%;
+  }
+
+  .middle-header {
+  display: none;
+  }
+
+  .responsive-header {
+  display: block;
+  width: 100%;
+  }
+
+  #openButton, #closeButton {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  }
+
+  .middle-header h1 {
+  margin: 0%;
+  }
+
+  .static_1, .static_2, .static_3, .static_4, .static_5 {
+  text-align: center;
+  margin: 0;
+  }
+
+  .left-header {
+  display: none;
+  }
 }
