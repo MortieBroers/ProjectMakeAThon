@@ -6,12 +6,20 @@ $DBH = connection();
 function score($DBH){
 $cat = "SELECT * FROM gameserver";
     $antwoord = $DBH->query($cat);
-    echo '<ul>';
+    echo   '<tr>
+                <th>Naam</th>
+                <th>Score</th>
+            </tr>
+
+            <tr>';
     while ($row = $antwoord->fetch(PDO::FETCH_ASSOC)) {
-        echo '<li>';
+        echo '<td>';
         echo $row['naam'];
+        echo '</br>';
+        echo '</td>';
+        echo '<td>';
         echo $row['score'];
-        echo '</li>';
+        echo '</td>';
     }
-    echo '</ul>';
+    echo '</tr>';
 }

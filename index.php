@@ -69,11 +69,11 @@ require_once 'function.php';
   </div>
 
   <script src="script.js"></script>
-
-  <?php
-  score($DBH);
-  ?>
-
+  <table id="scoreTable">
+    <?php
+      score($DBH);
+    ?>
+  </table>
 </body>
 
 </html>
