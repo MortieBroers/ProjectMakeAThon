@@ -1,6 +1,5 @@
 <?php
 require_once 'config.php';
-require_once 'functions.php';
 ?>
 <html lang="en" dir="ltr">
 
@@ -35,12 +34,6 @@ require_once 'functions.php';
       </div>
     </div>
   </header>
-
-  <div id="scores">
-    <?php 
-      ShowScores(); 
-    ?>
-  </div>
 
   <button id="openButton" onclick="openInfo()">Open Info</button>
 
